@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome</title>
-  </head>
-  <body>
-    <h1>Welcome to the Meeting App</h1>
-    <p>
-      There are currently {{num_meetings}} in the database
-    </p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome</title>
+</head>
+
+<body>
+  <h1>Welcome to the Meeting App</h1>
+  <p>
+    There are currently {{meetings}} meeting in the database
+  </p>
+  <h2>Meetings:</h2>
+  <ul>
+    {% for meeting in meetings %}
+    <li>
+      <a href={% url 'detail' meeting.id %}>
+        {{meeting.title}}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  <a href={% url 'rooms' %}>
+    All Rooms
+  </a>
+</body>
+
 </html>
