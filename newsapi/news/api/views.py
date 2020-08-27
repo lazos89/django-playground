@@ -4,8 +4,8 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.generics import get_object_or_404
-from news.models import Article
-from news.api.serializers import ArticleSerializer
+from news.models import Article, Journalist
+from news.api.serializers import ArticleSerializer, JournalistSerializer
 
 
 class ArticleListCreateApiView(APIView):
@@ -44,6 +44,46 @@ class ArticleDetailApiView(APIView):
         article = self.get_object(pk)
         article.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class JournalistListCreateApiView(APIView):
+    def get(self, request):
+        journalists = Journalist.objects.filter()
+        serializer = JournalistSerializer(
+            journalists, many=True, context={"request": request}
+        )
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = JournalistSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+# class JournalistDetailApiView(APIView):
+#     def get_object(self, pk):
+#         article = get_object_or_404(Article, pk=pk)
+#         return article
+
+#     def get(self, request, pk):
+#         article = self.get_object(pk)
+#         serializer = ArticleSerializer(article)
+#         return Response(serializer.data)
+
+#     def put(self, request, pK):
+#         article = self.get_object(pk)
+#         serializer = ArticleSerializer(article, data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return Response(serializer.data)
+#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+#     def delete(self, request, pk):
+#         article = self.get_object(pk)
+#         article.delete()
+#         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
 # @api_view(["GET", "POST"])
