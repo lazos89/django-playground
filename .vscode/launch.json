@@ -4,6 +4,14 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [{
+            "name": "Python: Django (intro_dfr_example)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/intro_dfr_example/manage.py",
+            "args": ["runserver", "--noreload"],
+            "django": true
+        },
+        {
             "name": "Python: Django (newsapi)",
             "type": "python",
             "request": "launch",
@@ -12,10 +20,10 @@
             "django": true
         },
         {
-            "name": "Python: Django (intro_dfr_example)",
+            "name": "Python: Django (jobboardapi)",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/intro_dfr_example/manage.py",
+            "program": "${workspaceFolder}/jobboardapi/manage.py",
             "args": ["runserver", "--noreload"],
             "django": true
         }

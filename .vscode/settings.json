@@ -1,7 +1,8 @@
 {
     "python.pythonPath": ".venv/bin/python",
     "python.autoComplete.extraPaths": [
-        "./newsapi"
+        "./newsapi",
+        "./jobboardapi"
     ],
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
@@ -10,5 +11,6 @@
     ],
     "python.formatting.provider": "black",
     "python.languageServer": "Microsoft",
+    "python.linting.flake8Enabled": false,
 
 }
