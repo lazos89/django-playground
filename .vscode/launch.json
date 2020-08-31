@@ -26,6 +26,14 @@
             "program": "${workspaceFolder}/jobboardapi/manage.py",
             "args": ["runserver", "--noreload"],
             "django": true
-        }
+        },
+        {
+            "name": "Python: Django (ebooksapi)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ebooksapi/manage.py",
+            "args": ["runserver", "--noreload"],
+            "django": true
+        },
     ]
 }

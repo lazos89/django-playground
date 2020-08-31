@@ -2,7 +2,8 @@
     "python.pythonPath": ".venv/bin/python",
     "python.autoComplete.extraPaths": [
         "./newsapi",
-        "./jobboardapi"
+        "./jobboardapi",
+        "./ebooksapi"
     ],
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
