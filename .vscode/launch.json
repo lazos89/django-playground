@@ -1,39 +1,55 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [{
-            "name": "Python: Django (intro_dfr_example)",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/intro_dfr_example/manage.py",
-            "args": ["runserver", "--noreload"],
-            "django": true
-        },
-        {
-            "name": "Python: Django (newsapi)",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/newsapi/manage.py",
-            "args": ["runserver", "--noreload"],
-            "django": true
-        },
-        {
-            "name": "Python: Django (jobboardapi)",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/jobboardapi/manage.py",
-            "args": ["runserver", "--noreload"],
-            "django": true
-        },
-        {
-            "name": "Python: Django (ebooksapi)",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/ebooksapi/manage.py",
-            "args": ["runserver", "--noreload"],
-            "django": true
-        },
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [{
+      "name": "Python: Django (intro_dfr_example)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/intro_dfr_example/manage.py",
+      "args": ["runserver", "--noreload"],
+      "django": true
+    },
+    {
+      "name": "Python: Django (newsapi)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/newsapi/manage.py",
+      "args": ["runserver", "--noreload"],
+      "django": true
+    },
+    {
+      "name": "Python: Django (jobboardapi)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/jobboardapi/manage.py",
+      "args": ["runserver", "--noreload"],
+      "django": true
+    },
+    {
+      "name": "Python: Django (ebooksapi)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/ebooksapi/manage.py",
+      "args": ["runserver", "--noreload"],
+      "django": true
+    },
+    {
+      "name": "Python: Django (quotesapi)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/quotesapi/manage.py",
+      "args": ["runserver", "--noreload"],
+      "django": true
+    },
+    {
+      "name": "Python: Django (profilesapi)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/profilesapi/manage.py",
+      "args": ["runserver", "--noreload"],
+      "django": true
+    }
+  ]
 }

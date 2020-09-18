@@ -3,7 +3,9 @@
     "python.autoComplete.extraPaths": [
         "./newsapi",
         "./jobboardapi",
-        "./ebooksapi"
+        "./ebooksapi",
+        "./quotesapi",
+        "./profilesapi",
     ],
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
