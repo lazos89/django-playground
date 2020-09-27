@@ -196,6 +196,19 @@ cyrillic = ["pytils (>=0.2)"]
 translitcodec = ["translitcodec (>=0.3)"]
 
 [[package]]
+category = "main"
+description = "Provides a country field for Django models."
+name = "django-countries"
+optional = false
+python-versions = "*"
+version = "6.1.3"
+
+[package.extras]
+dev = ["tox", "black", "django", "pytest", "pytest-django", "djangorestframework", "graphene-django"]
+maintainer = ["transifex-client", "zest.releaser", "django"]
+test = ["pytest", "pytest-django", "pytest-cov", "graphene-django"]
+
+[[package]]
 category = "dev"
 description = "Django template coverage.py plugin"
 name = "django-coverage-plugin"
@@ -685,7 +698,7 @@ python-versions = "*"
 version = "1.12.1"
 
 [metadata]
-content-hash = "0d988c5b99b7fcdc5393f6b7d733fd69f4066a75ec9f2df04cbe2179700da714"
+content-hash = "5a536627cab9e3f14cb92d7f254acbbe997bbc6adac5b74085a4e27a3464650b"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -835,6 +848,10 @@ django-allauth = [
 django-autoslug = [
     {file = "django-autoslug-1.9.8.tar.gz", hash = "sha256:bae66c27d35615f472865b99c4d107f3b3add3d22ee337e84960fc07694abd45"},
     {file = "django_autoslug-1.9.8-py2.py3-none-any.whl", hash = "sha256:26459eeddec207e307c55777a10fc25d17f4978753695340b16a17ed248a6f70"},
+]
+django-countries = [
+    {file = "django-countries-6.1.3.tar.gz", hash = "sha256:64015977a5989bcb0e645007299b19fe8ac117466af375161b26bcfa32ae2808"},
+    {file = "django_countries-6.1.3-py3-none-any.whl", hash = "sha256:a0f77154ae08cb38a0d65530a399ead5f5837ebf6c74f7576e71bb7acdacca94"},
 ]
 django-coverage-plugin = [
     {file = "django_coverage_plugin-1.8.0.tar.gz", hash = "sha256:d53cbf3828fd83d6b89ff7292c6805de5274e36411711692043e67bcde25ae0c"},
