@@ -6,6 +6,7 @@
         "./ebooksapi",
         "./quotesapi",
         "./profilesapi",
+        "./everycheese",
     ],
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
